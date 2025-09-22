@@ -3,6 +3,16 @@ public class Main {
     public static void main(String[] args) {
         IntContainer c = new IntContainer();
         
+        c.add(10);
+        c.add(20);
+        c.add(30);
+
+        System.out.println("get(1) = " + c.get(1)); 
+        int removed = c.remove(1);    
+                      
+        System.out.println("removed = " + removed);
+        System.out.println("get(1) = " + c.get(1)); 
+        System.out.println("size = " + c.size());  
     }
 }
 
